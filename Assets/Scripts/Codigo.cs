@@ -14,3 +14,14 @@ public class Codigo : MonoBehaviour
         
     }
 }
+
+
+private enum manacolors { 
+
+Blanco, 
+Verde,
+Negro,
+Azul,
+Amarillo,
+Naranja,
+} 
