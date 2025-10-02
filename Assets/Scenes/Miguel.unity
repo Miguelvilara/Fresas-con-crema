@@ -4323,9 +4323,9 @@ GameObject:
   m_Component:
   - component: {fileID: 346194306}
   m_Layer: 0
-  m_Name: point (13)
+  m_Name: end point
   m_TagString: Untagged
-  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13183,9 +13183,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1022879778}
   m_Layer: 0
-  m_Name: point (14)
+  m_Name: start point
   m_TagString: Untagged
-  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
