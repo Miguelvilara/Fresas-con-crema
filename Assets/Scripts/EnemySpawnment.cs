@@ -4,12 +4,12 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
-    [SerializeField] private Transform spawnPoint; // Arrástrale tu "Start Point"
+    [SerializeField] private Transform spawnPoint; // Lugar donde aparecen los enemigos
 
     [Header("Attributes")]
     [SerializeField] private int baseEnemies = 8;
     [SerializeField] private float enemiesPerSecond = 0.5f;
-    [SerializeField] private float timeBetweenWaves = 5f;    // (aún no usado aquí)
+    [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
 
     private int currentWave = 1;
@@ -20,20 +20,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        // Validación de referencias antes de arrancar
-        if (spawnPoint == null)
-        {
-            if (LevelManager.main != null && LevelManager.main.StartPoint != null)
-            {
-                spawnPoint = LevelManager.main.StartPoint; // fallback
-            }
-            else
-            {
-                Debug.LogError("[EnemySpawner] No hay Spawn Point asignado y LevelManager/StartPoint es nulo.", this);
-                return; // Evita UnassignedReferenceException más adelante
-            }
-        }
-
         StartWave();
     }
 
@@ -43,12 +29,13 @@ public class EnemySpawner : MonoBehaviour
 
         timeSinceLastSpawn += Time.deltaTime;
 
+        // Spawnea un enemigo cada cierto intervalo
         if (timeSinceLastSpawn >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0)
         {
             SpawnEnemy();
             enemiesLeftToSpawn--;
             enemiesAlive++;
-            timeSinceLastSpawn = 0f;
+            timeSinceLastSpawn = 0;
         }
     }
 
@@ -61,19 +48,9 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        if (enemyPrefabs == null || enemyPrefabs.Length == 0 || enemyPrefabs[0] == null)
-        {
-            Debug.LogError("[EnemySpawner] No hay prefab de enemigo asignado.", this);
-            return;
-        }
-
-        if (spawnPoint == null)
-        {
-            Debug.LogError("[EnemySpawner] spawnPoint es nulo al spawnear.", this);
-            return;
-        }
-
-        Instantiate(enemyPrefabs[0], spawnPoint.position, Quaternion.identity);
+        GameObject prefabToSpawn = enemyPrefabs[0];
+        Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
+    
     }
 
     private int EnemiesPerWave()
