@@ -11006,7 +11006,6 @@ GameObject:
   m_Component:
   - component: {fileID: 866775721}
   - component: {fileID: 866775720}
-  - component: {fileID: 866775722}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -11026,22 +11025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13485d2721b84b4a8c371413f7b0a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: {fileID: 1022879778}
-  path:
-  - {fileID: 124088730}
-  - {fileID: 97872026}
-  - {fileID: 2126384633}
-  - {fileID: 1397817354}
-  - {fileID: 1502231588}
-  - {fileID: 1271274189}
-  - {fileID: 1818768735}
-  - {fileID: 983961342}
-  - {fileID: 407978471}
-  - {fileID: 131337141}
-  - {fileID: 125451348}
-  - {fileID: 1277020441}
-  - {fileID: 1402568809}
-  - {fileID: 346194306}
+  startPoint: {fileID: 0}
+  path: []
 --- !u!4 &866775721
 Transform:
   m_ObjectHideFlags: 0
@@ -11057,25 +11042,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &866775722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866775719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 448e8833262b36e41abdce7ae0ce3ce3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 285162743089969979, guid: e616270aeb95f6d4ca2429e7a7ac3157, type: 3}
-  spawnPoint: {fileID: 0}
-  baseEnemies: 8
-  enemiesPerSecond: 0.5
-  timeBetweenWaves: 5
-  difficultyScalingFactor: 0.75
 --- !u!1001 &870494285
 PrefabInstance:
   m_ObjectHideFlags: 0
