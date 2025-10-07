@@ -4,7 +4,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject[] enemyPrefabs;
-    [SerializeField] private Transform spawnPoint; 
+    //[SerializeField] private Transform spawnPoint; 
 
     [Header("Attributes")]
     [SerializeField] private int baseEnemies = 8;
@@ -20,16 +20,19 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        isSpawning = true;
-        enemiesLeftToSpawn = EnemiesPerWave();
-        
-        //StartWave();
+
+        StartWave();
     }
 
-    private int EnemiesPerWave()
+    private void StartWave()
     {
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
+        isSpawning = true;
+        enemiesLeftToSpawn = EnemiesPerWave();
+        Debug.Log($"Wave {currentWave} started! Spawning {enemiesLeftToSpawn} enemies.");
     }
+
+
+    
 
 
     private void Update()
@@ -41,11 +44,26 @@ public class EnemySpawner : MonoBehaviour
         if (timeSinceLastSpawn >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0)
         {
             Debug.Log("Spawn Enemy");
-           // SpawnEnemy();
-            //enemiesLeftToSpawn--;
-            //enemiesAlive++;
-            //timeSinceLastSpawn = 0;
+            SpawnEnemy();
+            enemiesLeftToSpawn--;
+            enemiesAlive++;
+            timeSinceLastSpawn = 0;
+            
         }
 
 
     }
+
+    private void SpawnEnemy()
+    {
+        GameObject prefabToSpawn = enemyPrefabs[0];
+        Instantiate(prefabToSpawn, LevelManager.main.startPoint.position, Quaternion.identity);
+
+    }
+
+    private int EnemiesPerWave()
+    {
+        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
+    }
+
+}
