@@ -11,6 +11,7 @@ public class Turret : MonoBehaviour
 
    [Header("Atribute")]
    [SerializeField] private float targetingRange = 5f;
+   [SerializeField] private float rotationSpeed = 5f; 
 
   
    //Buscar Target y hits
@@ -23,6 +24,10 @@ public class Turret : MonoBehaviour
 		}
 
 		RotateTowardTarget();
+
+		if (CheckTargetIsInRange()) {
+			target = null;
+		}
    }
 
    private void FindTarget () {
@@ -33,12 +38,19 @@ public class Turret : MonoBehaviour
 
 	   }
    }
+   
+   private bool CheckTargetIsInRange() {
+	   return Vector2.Distance(target.position, transform.position) <= targetingRange;
 
+   }
+
+   
+   //Rotacion de la torre
    private void RotateTowardTarget(){
-	   float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
+	   float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
 
 	   Quaternion targetRotation = Quaternion.Euler(new Vector3(0f,0f,angle)); 
-	   transform.rotation = targetRotation;
+	   turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 	   
 
    }
