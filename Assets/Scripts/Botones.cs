@@ -16,7 +16,7 @@ public class Botones : MonoBehaviour
     public void Segundo()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         Debug.Log("Botón presionado, cargando escena...");
     }
