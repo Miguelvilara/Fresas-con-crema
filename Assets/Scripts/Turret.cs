@@ -5,66 +5,74 @@ using UnityEditor;
 
 public class Turret : MonoBehaviour
 {
-	[Header("References")]
-	[SerializeField] private Transform turretRotationPoint;
-	[SerializeField] private LayerMask enemyMask;
+    [Header("References")]
+    [SerializeField] private Transform turretRotationPoint;
+    [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firingPoint;
 
-   [Header("Atribute")]
-   [SerializeField] private float targetingRange = 5f;
-   [SerializeField] private float rotationSpeed = 5f; 
+    [Header("Attributes")]
+    [SerializeField] private float targetingRange = 5f;
+    [SerializeField] private float rotationSpeed = 5f; 
+    [SerializeField] private float bps = 1f; // Balas Por Segundo
 
-  
-   //Buscar Target y hits
-   private Transform target;
+    private Transform target;
+    private float timeUntilFire;
 
-   private void Update(){
-		if(target == null){
-			FindTarget();
-			return;
-		}
+    private void Update()
+    {
+        if (target == null)
+        {
+            FindTarget();
+            return;
+        }
 
-		RotateTowardTarget();
+        RotateTowardTarget();
 
-		if (CheckTargetIsInRange()) {
-			target = null;
-		}
-   }
+        if (!CheckTargetIsInRange())
+        {
+            target = null;
+        }
+        else
+        {
+            timeUntilFire += Time.deltaTime;
+            if (timeUntilFire >= 1f / bps)
+            {
+                Shoot();
+                timeUntilFire = 0f;
+            }
+        }
+    }
 
-   private void FindTarget () {
-	   RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2) transform.position, 0f, enemyMask);
+    private void Shoot()
+    {
+        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+        bulletScript.SetTarget(target);
+    }
 
-	   if (hits.Length > 0) {
-			target = hits [0].transform;
+    private void FindTarget()
+    {
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, Vector2.zero, 0f, enemyMask);
+        if (hits.Length > 0)
+            target = hits[0].transform;
+    }
 
-	   }
-   }
-   
-   private bool CheckTargetIsInRange() {
-	   return Vector2.Distance(target.position, transform.position) <= targetingRange;
+    private bool CheckTargetIsInRange()
+    {
+        return Vector2.Distance(target.position, transform.position) <= targetingRange;
+    }
 
-   }
+    private void RotateTowardTarget()
+    {
+        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
+        Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
 
-   
-   //Rotacion de la torre
-   private void RotateTowardTarget(){
-	   float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
-
-	   Quaternion targetRotation = Quaternion.Euler(new Vector3(0f,0f,angle)); 
-	   turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-	   
-
-   }
-
-
-   //Zona de Disparo
-   private void OnDrawGizmosSelected() {
-
-	Handles.color = Color.cyan;
-	Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
-
-   }
+    private void OnDrawGizmosSelected()
+    {
+        Handles.color = Color.cyan;
+        Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
+    }
 }
-
-
-
-
