@@ -13,6 +13,14 @@ public class Botones : MonoBehaviour
         Debug.Log("Botón presionado, cargando escena...");
     }
 
+    public void Segundo()
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+
+        Debug.Log("Botón presionado, cargando escena...");
+    }
+
     public void Salir()
     { }
 
