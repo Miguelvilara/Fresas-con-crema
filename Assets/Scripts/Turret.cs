@@ -19,6 +19,7 @@ public class Turret : MonoBehaviour
     private Transform target;
     private float timeUntilFire;
 
+    //Busqueda de enemigo y ritmo
     private void Update()
     {
         if (target == null)
@@ -43,33 +44,33 @@ public class Turret : MonoBehaviour
             }
         }
     }
-
+    //bala
     private void Shoot()
     {
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
     }
-
+    //Apuntado de enemigo
     private void FindTarget()
     {
         RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, Vector2.zero, 0f, enemyMask);
         if (hits.Length > 0)
             target = hits[0].transform;
     }
-
+    //deteccion del enemigo en rango 
     private bool CheckTargetIsInRange()
     {
         return Vector2.Distance(target.position, transform.position) <= targetingRange;
     }
-
+    //Rotacion que no hay
     private void RotateTowardTarget()
     {
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
-
+    //Rango de la torre en color
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.cyan;
