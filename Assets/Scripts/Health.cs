@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-  [Header("Atribute")]
-  [SerializeField] private int hitPoints = 2;
+    [Header("Attributes")]
+    [SerializeField] private int hitPoints = 2;
 
-  public void TakeDamage (int dmg){
-      hitPoints -= dmg;
+    private bool isDestroyed = false;
 
-      if(hitPoints <= 0){
-          EnemySpawner.onEnemyDestroy.Invoke();
-          Destroy(gameObject);
+    public void TakeDamage(int dmg)
+    {
+        hitPoints -= dmg;
 
-      }
-
-
-  }
-    
+        if (hitPoints <= 0 && !isDestroyed)
+        {
+            EnemySpawner.onEnemyDestroy.Invoke();
+            isDestroyed = true;
+            Destroy(gameObject);
+        }
+    }
 }
+

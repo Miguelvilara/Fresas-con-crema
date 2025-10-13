@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: New Layer 2
+    uniqueID: 389936967
+    locked: 0
   - name: Turret
     uniqueID: 643827755
     locked: 0
