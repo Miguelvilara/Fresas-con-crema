@@ -2,32 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Plot : MonoBehaviour {
-   
-	[Header("References")]
-	[SerializeField] private SpriteRenderer sr;
-	[SerializeField] private Color hoverColor;
+public class Plot : MonoBehaviour
+{
 
-   private GameObject tower;
-   private Color startColor;
+    [Header("References")]
+    [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private Color hoverColor;
 
-   private void Start() {
-		startColor = sr.color;
-   }
+    private GameObject tower;
+    private Color startColor;
 
-   private void onMouseEnter() {
-		sr.color = hoverColor;
-   }
+    private void Start()
+    {
+        startColor = sr.color;
+    }
 
-   private void OnMouseExit() {
-		sr.color = startColor;
-   }
+    private void OnMouseEnter()
+    {
+        print("On Mouse Enter");
+        sr.color = hoverColor;
+    }
 
-   private void OnMouseDown() {
-		if (tower != null) return;
+    void OnMouseOver()
+    {
+        print("On Mouse Over");
+    }
 
-		GameObject towerToBuild = BuildManager.main.GetSelectedTower();
-		Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y, -1f);
-		tower = Instantiate(towerToBuild, spawnPosition, Quaternion.identity);
-   }
+    private void OnMouseExit()
+    {
+        print("On Mouse Exit");
+        sr.color = startColor;
+    }
+
+    private void OnMouseDown()
+    {
+        print("On Mouse Down");
+        if (tower != null) return;
+
+        GameObject towerToBuild = BuildManager.main.GetSelectedTower();
+        Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y, -1f);
+        tower = Instantiate(towerToBuild, spawnPosition, Quaternion.identity);
+    }
 }
