@@ -39,8 +39,16 @@ public class Plot : MonoBehaviour
         print("On Mouse Down");
         if (tower != null) return;
 
-        GameObject towerToBuild = BuildManager.main.GetSelectedTower();
-        Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y, -1f);
-        tower = Instantiate(towerToBuild, spawnPosition, Quaternion.identity);
+        Tower towerToBuild = BuildManager.main.GetSelectedTower();
+
+        if(towerToBuild.cost > LevelManager.main.currency) {
+            Debug.Log("No hay feria Bro");
+            return;
+        }
+
+        LevelManager.main.SpendCurrency(towerToBuild.cost);
+
+        tower = Instantiate (towerToBuild.prefab, transform.position, Quaternion.identity);
+        
     }
 }
