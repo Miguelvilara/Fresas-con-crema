@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: c6becf59e05b5489fad3aec126a25872
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3978239424535698181
+    second: Muerte dona2_0
+  - first:
+      213: 5941805108460471258
+    second: Muerte dona2_1
+  - first:
+      213: -5765428132927244251
+    second: Muerte dona2_2
+  - first:
+      213: 8651869690625023004
+    second: Muerte dona2_3
+  - first:
+      213: 1070616730798457329
+    second: Muerte dona2_4
+  - first:
+      213: 4711415814914559539
+    second: Muerte dona2_5
+  - first:
+      213: -6156134844957875999
+    second: Muerte dona2_6
+  - first:
+      213: -7137690181040340798
+    second: Muerte dona2_7
+  - first:
+      213: -2610938845353320290
+    second: Muerte dona2_8
+  - first:
+      213: -4315513926301093620
+    second: Muerte dona2_9
+  - first:
+      213: 2414772789636823629
+    second: Muerte dona2_10
+  - first:
+      213: 4193075413511714484
+    second: Muerte dona2_11
+  - first:
+      213: 2636577352875229210
+    second: Muerte dona2_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Muerte dona2_0
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 965
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b97e2ddab853730800000000000000
+      internalID: 3978239424535698181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 850
+        width: 93
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3436ed348857250800000000000000
+      internalID: 5941805108460471258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_2
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 884
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528f3ded8a51dffa0800000000000000
+      internalID: -5765428132927244251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_3
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 820
+        width: 99
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c5ca0e4ad911870800000000000000
+      internalID: 8651869690625023004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_4
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 839
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f105d98e389bde00800000000000000
+      internalID: 1070616730798457329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_5
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 861
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ec325b8bf426140800000000000000
+      internalID: 4711415814914559539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_6
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 845
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0a1e0a9f3019aa0800000000000000
+      internalID: -6156134844957875999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 817
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c00c42f894d1fc90800000000000000
+      internalID: -7137690181040340798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_8
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 793
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90627814f414cbd0800000000000000
+      internalID: -2610938845353320290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_9
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 771
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c017297d2f63c14c0800000000000000
+      internalID: -4315513926301093620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_10
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 786
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4af493ee0ff28120800000000000000
+      internalID: 2414772789636823629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_11
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 767
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b63aca6fdbc03a30800000000000000
+      internalID: 4193075413511714484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte dona2_12
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 335
+        width: 344
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10c7fc1221079420800000000000000
+      internalID: 2636577352875229210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Muerte dona2_0: 3978239424535698181
+      Muerte dona2_1: 5941805108460471258
+      Muerte dona2_10: 2414772789636823629
+      Muerte dona2_11: 4193075413511714484
+      Muerte dona2_12: 2636577352875229210
+      Muerte dona2_2: -5765428132927244251
+      Muerte dona2_3: 8651869690625023004
+      Muerte dona2_4: 1070616730798457329
+      Muerte dona2_5: 4711415814914559539
+      Muerte dona2_6: -6156134844957875999
+      Muerte dona2_7: -7137690181040340798
+      Muerte dona2_8: -2610938845353320290
+      Muerte dona2_9: -4315513926301093620
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
