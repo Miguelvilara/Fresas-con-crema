@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class Movimientocaramelo : MonoBehaviour
+public class ZanahoriaMov : MonoBehaviour
 {
+   
     public Animator animator;
     public string triggerAvanzar = "AnimacionCambio";
     public string triggerRegresar = "Retorno";
@@ -14,11 +15,11 @@ public class Movimientocaramelo : MonoBehaviour
             // Verifica en qué estado está la animación
             AnimatorStateInfo estado = animator.GetCurrentAnimatorStateInfo(0);
 
-            if (estado.IsName("CARAMELO1"))
+            if (estado.IsName("Zanahoriaidle"))
             {
                 animator.SetTrigger(triggerAvanzar);
             }
-            else if (estado.IsName("CARAMELOMOV"))
+            else if (estado.IsName("ZanahoriaMOV"))
             {
                 animator.SetTrigger(triggerRegresar);
             }
@@ -29,3 +30,5 @@ public class Movimientocaramelo : MonoBehaviour
         }
     }
 }
+
+
