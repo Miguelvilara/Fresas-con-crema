@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 4776560e1c703b54f8f6bfb54acbf4fe
+guid: 1d0109c880783334e92325979f2904e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2107449863439384071
-    second: "ca\xF1on33_Mesa de trabajo 1_0"
-  - first:
-      213: -3135817601052551167
-    second: "ca\xF1on33_Mesa de trabajo 1_1"
-  - first:
-      213: -7680933577799695297
-    second: "ca\xF1on33_Mesa de trabajo 1_2"
+      213: -4872229794691821755
+    second: "CA\xD1ON DISPARO1_Mesa de trabajo 1_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "ca\xF1on33_Mesa de trabajo 1_0"
+      name: "CA\xD1ON DISPARO1_Mesa de trabajo 1_0"
       rect:
         serializedVersion: 2
-        x: 40
-        y: 160
-        width: 19
-        height: 19
+        x: 50
+        y: 34
+        width: 60
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70eff3c2c7a2f3d10800000000000000
-      internalID: 2107449863439384071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ca\xF1on33_Mesa de trabajo 1_1"
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 154
-        width: 19
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10858d091865b74d0800000000000000
-      internalID: -3135817601052551167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ca\xF1on33_Mesa de trabajo 1_2"
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 5
-        width: 134
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3401e73b97d76590800000000000000
-      internalID: -7680933577799695297
+      spriteID: 54fc15fd0dc526cb0800000000000000
+      internalID: -4872229794691821755
       vertices: []
       indices: 
       edges: []
@@ -188,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "ca\xF1on33_Mesa de trabajo 1_0": 2107449863439384071
-      "ca\xF1on33_Mesa de trabajo 1_1": -3135817601052551167
-      "ca\xF1on33_Mesa de trabajo 1_2": -7680933577799695297
+      "CA\xD1ON DISPARO1_Mesa de trabajo 1_0": -4872229794691821755
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

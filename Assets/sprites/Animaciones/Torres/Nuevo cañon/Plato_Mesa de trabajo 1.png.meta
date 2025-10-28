@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 4776560e1c703b54f8f6bfb54acbf4fe
+guid: 4419574dee6248a42a59b54ce55ed7db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2107449863439384071
-    second: "ca\xF1on33_Mesa de trabajo 1_0"
-  - first:
-      213: -3135817601052551167
-    second: "ca\xF1on33_Mesa de trabajo 1_1"
-  - first:
-      213: -7680933577799695297
-    second: "ca\xF1on33_Mesa de trabajo 1_2"
+      213: 1070760108840103624
+    second: Plato_Mesa de trabajo 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,57 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "ca\xF1on33_Mesa de trabajo 1_0"
+      name: Plato_Mesa de trabajo 1_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 160
-        width: 19
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70eff3c2c7a2f3d10800000000000000
-      internalID: 2107449863439384071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ca\xF1on33_Mesa de trabajo 1_1"
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 154
-        width: 19
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10858d091865b74d0800000000000000
-      internalID: -3135817601052551167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "ca\xF1on33_Mesa de trabajo 1_2"
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 5
+        x: 12
+        y: 9
         width: 134
-        height: 139
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3401e73b97d76590800000000000000
-      internalID: -7680933577799695297
+      spriteID: 8cea21755aa1cde00800000000000000
+      internalID: 1070760108840103624
       vertices: []
       indices: 
       edges: []
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "ca\xF1on33_Mesa de trabajo 1_0": 2107449863439384071
-      "ca\xF1on33_Mesa de trabajo 1_1": -3135817601052551167
-      "ca\xF1on33_Mesa de trabajo 1_2": -7680933577799695297
+      Plato_Mesa de trabajo 1_0: 1070760108840103624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
