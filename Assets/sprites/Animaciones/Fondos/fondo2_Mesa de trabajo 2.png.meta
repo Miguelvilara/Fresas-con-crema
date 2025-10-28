@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 11e36d19d9a66470a92b96a47d6f149d
+guid: 8e49e234ae912ad42baa1d01fc8044c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2016428957917690539
-    second: Zanahoria 2_0
-  - first:
-      213: -8483136857836137304
-    second: Zanahoria 2_1
+      213: -2408334455531484883
+    second: fondo2_Mesa de trabajo 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zanahoria 2_0
+      name: fondo2_Mesa de trabajo 2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 391
-        height: 562
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5554188db843404e0800000000000000
-      internalID: -2016428957917690539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zanahoria 2_1
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 381
-        width: 37
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a457af29f7d54a80800000000000000
-      internalID: -8483136857836137304
+      spriteID: d2946b59290e39ed0800000000000000
+      internalID: -2408334455531484883
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Zanahoria 2_0: -2016428957917690539
-      Zanahoria 2_1: -8483136857836137304
+      fondo2_Mesa de trabajo 2_0: -2408334455531484883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
