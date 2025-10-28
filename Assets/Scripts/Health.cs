@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
 
     private bool isDestroyed = false;
 
+
     public void TakeDamage(int dmg)
     {
         hitPoints -= dmg;
@@ -19,8 +20,22 @@ public class Health : MonoBehaviour
             EnemySpawner.onEnemyDestroy.Invoke();
             LevelManager.main.IncreaseCurrency(currencyWorth);
             isDestroyed = true;
-            Destroy(gameObject);
+            //Animacion
+            Animator animator = GetComponent<Animator>();
+            if (animator != null)
+            {
+                //Mateo use the force
+                //Aqui usa la animacion
+                animator.SetTrigger("Muerte"); //La animacion de muerte se ejecutara con el trigger de muerte.
+
+            }
+            Invoke("Destruyeme", 1);
         }
     }
-}
 
+    public void Destruyeme()
+    {
+        Destroy(gameObject);
+    }
+
+}
