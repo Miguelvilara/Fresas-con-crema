@@ -73,7 +73,9 @@ public class Turret : MonoBehaviour
     //Rango de la torre en color
     private void OnDrawGizmosSelected()
     {
+#if UNITY_EDITOR
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
+#endif
     }
 }
