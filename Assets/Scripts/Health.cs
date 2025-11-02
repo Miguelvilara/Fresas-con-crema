@@ -24,7 +24,6 @@ public class Health : MonoBehaviour
             Animator animator = GetComponent<Animator>();
             if (animator != null)
             {
-                //Mateo use the force
                 //Aqui usa la animacion
                 animator.SetTrigger("Muerte"); //La animacion de muerte se ejecutara con el trigger de muerte.
 
@@ -37,5 +36,14 @@ public class Health : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+    if (other.CompareTag("Meta")) // Detecta si llegó al final
+    {
+        LevelManager.main.LoseLife(); // Resta una vida
+        Destroy(gameObject);          // Elimina al enemigo
+    }
+   }
 
 }
