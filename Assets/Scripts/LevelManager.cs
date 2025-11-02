@@ -1,5 +1,7 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Para reiniciar el nivel si quieres
+using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,9 +12,12 @@ public class LevelManager : MonoBehaviour
 
     public int currency;
 
+    [Header("UI")]
+    public TextMeshProUGUI livesText;
+
     [Header("Vidas del jugador")]
-    public int maxLives = 10;   // Vidas iniciales
-    private int currentLives;   // Vidas actuales
+    public int maxLives = 10;
+    private int currentLives; 
 
     private void Awake()
     {
@@ -22,7 +27,9 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         currency = 100;
-        currentLives = maxLives; // Inicializa las vidas
+        currentLives = maxLives;
+
+        UpdateLivesUI();
     }
 
     // Sistema de dinero
@@ -51,16 +58,27 @@ public class LevelManager : MonoBehaviour
         currentLives -= amount;
         Debug.Log("Vidas restantes: " + currentLives);
 
+        UpdateLivesUI();
+
         if (currentLives <= 0)
         {
             GameOver();
         }
     }
 
+    private void UpdateLivesUI(){
+
+        if (livesText != null)
+        {
+            livesText.text = "Lifes: " + currentLives.ToString();
+
+        }
+    }
+
     private void GameOver()
     {
         Debug.Log("GAME OVER");
-        Time.timeScale = 0f; // Pausa el juego
-        // Aquí podrías agregar una pantalla de Game Over más adelante
+        Time.timeScale = 1f; 
+        SceneManager.LoadScene("GameOverScene");
     }
 }
