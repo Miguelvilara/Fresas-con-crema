@@ -13,7 +13,8 @@ public class EnemyMovement : MonoBehaviour
 
     private void Start()
     {
-        target = LevelManager.main.path[pathIndex];
+        // Asume que LevelManager.main.path es un arreglo de Transform de los puntos de la ruta
+        target = LevelManager.main.path[pathIndex]; 
     }
 
     private void Update()
@@ -24,8 +25,8 @@ public class EnemyMovement : MonoBehaviour
 
             if (pathIndex == LevelManager.main.path.Length)
             {
-                EnemySpawner.onEnemyDestroy.Invoke();
-                Destroy(gameObject);
+                // CORRECCIÓN CLAVE: Eliminamos la lógica de destrucción y notificación de aquí.
+                // Ahora, el script Health detectará la colisión con la "Meta" y se encargará.
                 return;
             }
             else

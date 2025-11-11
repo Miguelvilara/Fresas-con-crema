@@ -17,9 +17,12 @@ public class Health : MonoBehaviour
 
         if (hitPoints <= 0 && !isDestroyed)
         {
-            EnemySpawner.onEnemyDestroy.Invoke();
+            // NOTIFICACIÓN AL WAVE MANAGER (POR DAÑO)
+            EnemySpawner.onEnemyDestroy.Invoke(); 
+            
             LevelManager.main.IncreaseCurrency(currencyWorth);
             isDestroyed = true;
+            
             //Animacion
             Animator animator = GetComponent<Animator>();
             if (animator != null)
@@ -39,11 +42,14 @@ public class Health : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-    if (other.CompareTag("Meta")) // Detecta si llegó al final
-    {
-        LevelManager.main.LoseLife(); // Resta una vida
-        Destroy(gameObject);          // Elimina al enemigo
+        if (other.CompareTag("Meta")) // Detecta si llegó al final
+        {
+            // CORRECCIÓN CLAVE: Notificar al WaveManager antes de destruir.
+            EnemySpawner.onEnemyDestroy.Invoke(); 
+            
+            LevelManager.main.LoseLife(); // Resta una vida
+            Destroy(gameObject);           // Elimina al enemigo
+        }
     }
-   }
 
 }
