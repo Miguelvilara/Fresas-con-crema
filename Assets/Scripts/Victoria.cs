@@ -3,15 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class Victoria : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public string menuSceneName = "Menu2";
+    public string gameSceneName = "Nivel2";
+
+    public void Nivel2()
     {
-        
+        SceneManager.LoadScene(gameSceneName);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadMainMenu()
     {
-        
+        SceneManager.LoadScene(menuSceneName);
     }
 }
+
