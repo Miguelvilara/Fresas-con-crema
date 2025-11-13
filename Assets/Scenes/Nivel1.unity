@@ -1749,12 +1749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f6833db79606fe4d85d9e7839e13ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 285162743089969979, guid: e616270aeb95f6d4ca2429e7a7ac3157, type: 3}
-  baseEnemies: 10
-  enemiesPerSecond: 1
-  timeBetweenWaves: 9
-  difficultyScalingFactor: 0.75
+  allWaves:
+  - {fileID: 11400000, guid: 1c4d0ac2024e5da469ff54c26e17ed25, type: 2}
 --- !u!212 &866775723
 SpriteRenderer:
   m_ObjectHideFlags: 0

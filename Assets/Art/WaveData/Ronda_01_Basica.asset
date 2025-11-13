@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Ronda_01_Basica
   m_EditorClassIdentifier: 
   waveName: Ronda 1
-  enemyGroups: []
+  enemyGroups:
+  - enemyPrefab: {fileID: 285162743089969979, guid: e616270aeb95f6d4ca2429e7a7ac3157, type: 3}
+    count: 1
+    spawnRate: 0.1
   delayAfterCompletion: 5

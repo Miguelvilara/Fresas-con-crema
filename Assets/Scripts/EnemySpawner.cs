@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -74,6 +75,33 @@ public class EnemySpawner : MonoBehaviour
         }
         
         Debug.Log("¡TODAS LAS RONDAS COMPLETADAS! VICTORIA.");
+        // Get the currently active scene
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Get the name of the active scene
+        string sceneName = currentScene.name;
+
+        //Miguel, aquí lo que estamos haciendo es guardar el nombre del último nivel que se jugó antes de ,llegar a la pantalla de Victoria. 
+        //Te dejo esto porque vas a necesitar tomar el nombre del último nivel jugado en tu pantalla de Victoria para saber a qué nivel lo tienes que mandar cuando le de continuar. 
+        
+
+        //Esto de aquí abajo se queda igual. 
+        PlayerPrefs.SetString("UltimoNivel", sceneName);
+        SceneManager.LoadScene("Victoria");
+        
+        
+        //Te dejo aquí abajo un ejemplo chiquito de cómo saber cuál fue el último nivel. 
+        //Ejemplo: 
+        //Miguel, te dejo por aquí también cómo vas a recuperar la información de en qué nivel estabas ya que llegues a la pantalla de victoria. 
+        string ultimoNivel = PlayerPrefs.GetString("UltimoNivel", "");
+        if (ultimoNivel.Contains("Nivel1"))
+        {
+            //Esto quiere decir que el jugador viene del nivel 1 y por tanto hay que llevarlo al nivel 2. 
+        }
+
+        
+
+        
     }
 
     // Corrutina que genera todos los enemigos de una ronda
