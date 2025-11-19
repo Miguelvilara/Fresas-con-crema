@@ -471,10 +471,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1256962388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 345, y: 535}
-  m_SizeDelta: {x: 326.0531, y: 97.459}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -34}
+  m_SizeDelta: {x: 186.10999, y: 55.630005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1594333242
 MonoBehaviour:
@@ -687,7 +687,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: Menu2
-  gameSceneName: Nivel2
+  nombreEscena2: Nivel2
+  nombreEscena3: Nivel3
 --- !u!4 &1792231071
 Transform:
   m_ObjectHideFlags: 0
@@ -736,10 +737,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1256962388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 712, y: 536}
-  m_SizeDelta: {x: 222.2699, y: 81.8917}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 96}
+  m_SizeDelta: {x: 126.87, y: 46.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934250227
 MonoBehaviour:

@@ -1217,7 +1217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allWaves:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: b269fee895f6ac645b914f9119a4b139, type: 2}
 --- !u!114 &668067443
 MonoBehaviour:
   m_ObjectHideFlags: 0
