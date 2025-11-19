@@ -8,30 +8,40 @@ public class Health : MonoBehaviour
     [SerializeField] private int hitPoints = 2;
     [SerializeField] private int currencyWorth = 50;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip deathSoundClip; 
+    [SerializeField] private float deathVolume = 1.0f;
+
     private bool isDestroyed = false;
 
 
     public void TakeDamage(int dmg)
+{
+    hitPoints -= dmg;
+
+    if (hitPoints <= 0 && !isDestroyed)
     {
-        hitPoints -= dmg;
+        isDestroyed = true; // Establecer el estado de destrucción primero
 
-        if (hitPoints <= 0 && !isDestroyed)
+        // 1. Reproducir el Sonido (Debe ser lo primero después del chequeo de estado)
+        if (deathSoundClip != null)
         {
-            // NOTIFICACIÓN AL WAVE MANAGER (POR DAÑO)
-            EnemySpawner.onEnemyDestroy.Invoke(); 
-            
-            LevelManager.main.IncreaseCurrency(currencyWorth);
-            isDestroyed = true;
-            
-            //Animacion
-            Animator animator = GetComponent<Animator>();
-            if (animator != null)
-            {
-                //Aqui usa la animacion
-                animator.SetTrigger("Muerte"); //La animacion de muerte se ejecutara con el trigger de muerte.
+            AudioSource.PlayClipAtPoint(deathSoundClip, transform.position, deathVolume);
+        }
 
-            }
-            Invoke("Destruyeme", 1);
+        // 2. Disparar la Animación
+        Animator animator = GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.SetTrigger("Muerte"); // Dispara la animación
+        }
+        
+        // 3. Lógica de Recompensa
+        EnemySpawner.onEnemyDestroy.Invoke(); 
+        LevelManager.main.IncreaseCurrency(currencyWorth);
+        
+        // 4. Programar la Destrucción (Espera 1 segundo para que la animación y el sonido terminen)
+        Invoke("Destruyeme", 1);
         }
     }
 

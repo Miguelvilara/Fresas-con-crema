@@ -147,6 +147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoints: 2
   currencyWorth: 20
+  deathSoundClip: {fileID: 8300000, guid: 6fe802ed443c93342bb3a14132b99814, type: 3}
+  deathVolume: 2
 --- !u!58 &4364250089115482800
 CircleCollider2D:
   m_ObjectHideFlags: 0
