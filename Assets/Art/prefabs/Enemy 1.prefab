@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda3567270119d541b50e1c415b916fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 2
-  currencyWorth: 50
+  hitPoints: 4
+  currencyWorth: 25
 --- !u!58 &4364250089115482800
 CircleCollider2D:
   m_ObjectHideFlags: 0
