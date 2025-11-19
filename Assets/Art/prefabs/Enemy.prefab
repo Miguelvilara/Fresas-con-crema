@@ -149,6 +149,8 @@ MonoBehaviour:
   currencyWorth: 20
   deathSoundClip: {fileID: 8300000, guid: 6fe802ed443c93342bb3a14132b99814, type: 3}
   deathVolume: 1
+  lifeLostSoundClip: {fileID: 8300000, guid: 46716f2e2c6c01c4898dc00e38f4eed4, type: 3}
+  lifeLostVolume: 1
 --- !u!58 &4364250089115482800
 CircleCollider2D:
   m_ObjectHideFlags: 0

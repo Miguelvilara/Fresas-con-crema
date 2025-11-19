@@ -12,6 +12,9 @@ public class Health : MonoBehaviour
     [SerializeField] private AudioClip deathSoundClip; 
     [SerializeField] private float deathVolume = 1.0f;
 
+    [SerializeField] private AudioClip lifeLostSoundClip; // Nuevo clip para la pérdida de vida
+    [SerializeField] private float lifeLostVolume = 1.0f;
+
     private bool isDestroyed = false;
 
 
@@ -54,7 +57,11 @@ public class Health : MonoBehaviour
     {
         if (other.CompareTag("Meta")) // Detecta si llegó al final
         {
-            // CORRECCIÓN CLAVE: Notificar al WaveManager antes de destruir.
+           if (lifeLostSoundClip != null)
+            {
+                AudioSource.PlayClipAtPoint(lifeLostSoundClip, transform.position, lifeLostVolume);
+            }
+
             EnemySpawner.onEnemyDestroy.Invoke(); 
             
             LevelManager.main.LoseLife(); // Resta una vida
