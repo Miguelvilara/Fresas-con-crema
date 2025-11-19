@@ -13,6 +13,7 @@ public class Turret : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private float shootVolume = 0.8f;
 
     [Header("Attributes")]
     [SerializeField] private float targetingRange = 5f;
@@ -50,11 +51,12 @@ public class Turret : MonoBehaviour
     //bala
     private void Shoot()
     {
-        if (audioSource != null)
+        if (audioSource != null && audioSource.clip != null)
         {
-            audioSource.PlayOneShot(audioSource.clip);
-
-        }
+            // --- CAMBIO 2: Usar la sobrecarga de PlayOneShot con el volumen ajustado ---
+            audioSource.PlayOneShot(audioSource.clip, shootVolume);
+        }  
+    
         
         GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();

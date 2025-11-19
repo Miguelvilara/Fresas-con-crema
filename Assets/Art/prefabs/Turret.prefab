@@ -54,8 +54,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8180266250322274878, guid: 9bd3371a0361a3445b71fb64a59dd29e, type: 3}
   firingPoint: {fileID: 2364071000162617385}
   audioSource: {fileID: -7989601733420280388}
-  targetingRange: 4
-  rotationSpeed: 500
+  shootVolume: 0.2
+  targetingRange: 5
+  rotationSpeed: 600
   bps: 1
 --- !u!82 &-7989601733420280388
 AudioSource:
@@ -70,7 +71,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: de4ad21dbdaae1c438f163407ae572d1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
