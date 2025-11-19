@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111405947a669304e9b09d382896d142, type: 3}
+  m_Name: Ronda_04_
+  m_EditorClassIdentifier: 
+  waveName: Ronda 4
+  enemyGroups:
+  - enemyPrefab: {fileID: 285162743089969979, guid: e616270aeb95f6d4ca2429e7a7ac3157, type: 3}
+    count: 11
+    spawnRate: 0.5
+  - enemyPrefab: {fileID: 285162743089969979, guid: 5754e8e20037a6d44862eb255d6b0adb, type: 3}
+    count: 13
+    spawnRate: 0.2
+  delayAfterCompletion: 5
