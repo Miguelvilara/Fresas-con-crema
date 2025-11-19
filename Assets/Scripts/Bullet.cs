@@ -9,6 +9,10 @@ public class Bullet : MonoBehaviour
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip impactSoundClip; 
+    [SerializeField] private float impactVolume = 1.0f;
+
     [Header("Attributes")]
     [SerializeField] private float bulletSpeed = 5f;
     [SerializeField] private int bulletDamage = 1;
@@ -29,6 +33,13 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         other.gameObject.GetComponent<Health>().TakeDamage(bulletDamage);
+        if (impactSoundClip != null)
+        {
+            AudioSource.PlayClipAtPoint(impactSoundClip, transform.position, impactVolume);
+        }
+        
         Destroy(gameObject);
+
+
     }
 }

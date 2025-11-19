@@ -51,7 +51,7 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 64
-  bulletPrefab: {fileID: 8180266250322274878, guid: 9bd3371a0361a3445b71fb64a59dd29e, type: 3}
+  bulletPrefab: {fileID: 8180266250322274878, guid: 663ac55adc3a0564da5140f36f313439, type: 3}
   firingPoint: {fileID: 2364071000162617385}
   audioSource: {fileID: -146194979618536491}
   targetingRange: 10
