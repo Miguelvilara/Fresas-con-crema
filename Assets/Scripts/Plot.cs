@@ -41,14 +41,18 @@ public class Plot : MonoBehaviour
 
         Tower towerToBuild = BuildManager.main.GetSelectedTower();
 
+        // 1. VERIFICACIÓN: Si no hay moneda, se detiene aquí.
         if(towerToBuild.cost > LevelManager.main.currency) {
             Debug.Log("No hay feria Bro");
-            return;
+            return; 
         }
 
+        // 2. Ejecución: Gasta moneda e instancia la torre.
         LevelManager.main.SpendCurrency(towerToBuild.cost);
 
         tower = Instantiate (towerToBuild.prefab, transform.position, Quaternion.identity);
         
+        // 3. AUDIO DE COLOCACIÓN: Se llama al BuildManager para sonar en esta posición.
+        BuildManager.main.PlayPlacementSound(transform.position); 
     }
 }

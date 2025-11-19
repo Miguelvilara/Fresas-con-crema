@@ -56,7 +56,7 @@ MonoBehaviour:
   audioSource: {fileID: -7989601733420280388}
   shootVolume: 0.2
   targetingRange: 5
-  rotationSpeed: 600
+  rotationSpeed: 400
   bps: 1
 --- !u!82 &-7989601733420280388
 AudioSource:
