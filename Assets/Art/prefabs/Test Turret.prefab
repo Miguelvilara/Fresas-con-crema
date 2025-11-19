@@ -57,7 +57,7 @@ MonoBehaviour:
   shootVolume: 0.2
   targetingRange: 10
   rotationSpeed: 200
-  bps: 2
+  bps: 0.5
 --- !u!82 &-146194979618536491
 AudioSource:
   m_ObjectHideFlags: 0

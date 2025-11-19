@@ -169,4 +169,4 @@ MonoBehaviour:
   impactSoundClip: {fileID: 8300000, guid: bcbfab9bb61a0b145a7be79cd83d9197, type: 3}
   impactVolume: 1
   bulletSpeed: 20
-  bulletDamage: 2
+  bulletDamage: 3
