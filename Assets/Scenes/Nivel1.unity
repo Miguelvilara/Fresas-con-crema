@@ -1751,6 +1751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allWaves:
   - {fileID: 11400000, guid: 1c4d0ac2024e5da469ff54c26e17ed25, type: 2}
+  - {fileID: 11400000, guid: 5e7cf149d3593584abc1045e810fde82, type: 2}
+  - {fileID: 11400000, guid: e7624674f3c1080408e57973b3ae7e1f, type: 2}
 --- !u!212 &866775723
 SpriteRenderer:
   m_ObjectHideFlags: 0
