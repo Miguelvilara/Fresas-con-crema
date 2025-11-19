@@ -2738,12 +2738,16 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 571dc09 (nivel2)
 --- !u!1 &1596841847
+=======
+--- !u!1 &1501577797
+>>>>>>> Stashed changes
 =======
 --- !u!1 &1501577797
 >>>>>>> Stashed changes
@@ -2755,6 +2759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 1596841851}
   - component: {fileID: 1596841850}
   - component: {fileID: 1596841849}
@@ -2762,10 +2767,15 @@ GameObject:
   m_Layer: 5
   m_Name: Canvas
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 1501577799}
   - component: {fileID: 1501577798}
   m_Layer: 0
   m_Name: Meta
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2773,8 +2783,13 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &1596841848
 MonoBehaviour:
+=======
+--- !u!65 &1501577798
+BoxCollider:
+>>>>>>> Stashed changes
 =======
 --- !u!65 &1501577798
 BoxCollider:
@@ -2783,6 +2798,7 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1596841847}
   m_Enabled: 1
@@ -2844,6 +2860,8 @@ Canvas:
 --- !u!224 &1596841851
 RectTransform:
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1501577797}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2861,27 +2879,37 @@ RectTransform:
   m_Center: {x: 0.5, y: 1.0200001, z: 0}
 --- !u!4 &1501577799
 Transform:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1596841847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1501577797}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.02, y: -0.97014, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2892,6 +2920,8 @@ Transform:
 >>>>>>> parent of 571dc09 (nivel2)
 =======
 >>>>>>> parent of 571dc09 (nivel2)
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &1633250089
@@ -3621,7 +3651,11 @@ SceneRoots:
   - {fileID: 1299386612}
   - {fileID: 1999150475}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 976868682}
+=======
+  - {fileID: 1501577799}
+>>>>>>> Stashed changes
 =======
   - {fileID: 1501577799}
 >>>>>>> Stashed changes
